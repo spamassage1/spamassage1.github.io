@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta title="MSPA - Keajaiban Spa dan massage" />
+    <title>MSPA - Keajaiban Spa dan massage</title>
+    <meta name="description" content="Selamat datang di MSPA, destinasi utama untuk pengalaman spa dan massage yang memanjakan. Temukan keindahan dan kelembutan melalui sentuhan kami yang penuh perhatian." />
+    <meta name="keywords" content="MSPA, spa, massage, keindahan, kelembutan, pengalaman spa, relaksasi, perawatan kulit" />
+    <meta property="og:title" content="MSPA - Keajaiban Spa dan massage" />
+    <meta property="og:description" content="Selamat datang di MSPA, destinasi utama untuk pengalaman spa dan massage yang memanjakan. Temukan keindahan dan kelembutan melalui sentuhan kami yang penuh perhatian." />
+    <meta property="og:url" content="https://www.mspa.com" />
+    <meta property="og:site_name" content="MSPA" />
+    <meta property="og:author" content="MSPA" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/favicon.png" />
+    <link rel="amphtml" href="">
+
+    <link href="styles.css" rel="stylesheet">
+    <link href="custom.css" rel="stylesheet">
+    <link href="animate.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Italiana&family=Montserrat:ital,wght@0,100;0,300;0,400;1,100&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <nav class="relative fixed flex justify-between py-6 w-full lg:px-48 md:px-12 px-4 content-center bg-white z-10">
+        <div class="flex items-center">
+          <img src='/assets/logos/Logo.png' alt="Logo" class="h-8" />
+        </div>
+        <ul class="font-montserrat items-center hidden md:flex">
+          <li class="mx-3 ">
+            <a class="growing-underline" href="#">
+              MSPA
+            </a>
+          </li>
+          <li class="growing-underline mx-3">
+            <a href="#gallery">Gallery</a>
+          </li>
+          <li class="growing-underline mx-3">
+            <a href="#about">About</a>
+          </li>
+        </ul>
+        <div class="font-montserrat hidden md:block">
+          <!-- <button class="mr-6">Login</button> -->
+          <button onclick="redirectToURL('https://google.com')" class=" py-2 px-4 text-white bg-sorange flex items-center">
+            Booking
+            <span class="ml-2">
+              <img src='/assets/logos/cart.svg' alt="Booking" class="h-6">
+            </span>
+          </button>
+        </div>
+        <div id="showMenu" class="md:hidden">
+          <img src='/assets/logos/Menu.svg' alt="Menu icon" />
+        </div>
+      </nav>
+      <div id='mobileNav' class="hidden px-4 py-6 fixed top-0 left-0 h-full w-full bg-white z-20 animate-fade-in-down">
+        <div id="hideMenu" class="flex justify-end">
+          <img src='/assets/logos/Cross.svg' alt="" class="h-16 w-16" />
+        </div>
+        <ul class="font-montserrat flex flex-col mx-8 my-24 items-center text-3xl">
+          <li class="my-6">
+            <a href="howitworks">How it works</a>
+          </li>
+          <li class="my-6">
+            <a href="features">Features</a>
+          </li>
+          <li class="my-6">
+            <a href="pricing">Pricing</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+ 
+    <main>
+
+      <section id="hero" class="w-full lg:px-48 md:px-12 px-4 items-center flex items-stretch overflow-hidden">
+        <div class="bg-white md:w-1/2">
+          <img src="/assets/model.png" alt="model spa" class="min-w-250"/>
+        </div>
+        <div class="bg-spurple md:w-2/3 flex flex-col justify-between">
+          <div class="text-white py-6 px-10 max-w-[700px]">
+            <h2 class="mt-10 text-4xl md:text-6xl font-gloock">Biarkan kulitmu bernafas</h2> 
+            <p class="md:pt-10 md:pr-20 font-montserrat">Menyambut Anda dalam Keajaiban Kecantikan dan Kenikmatan, di Mana Perjalanan <strong>Kebugaran</strong> dan <strong>Kelembutan</strong> Menyatu Menjadi Pengalaman Tak Terlupakan</p>
+            <button onclick="redirectToURL('https://google.com')" class="hover:animate-pulse hover:bg-white hover:text-spurple transition-all duration-200 md:mt-14 border-2 border-white flex items-stretch">
+              <p class="px-5 py-2 m-0">Pesan </p>
+              <div class="bg-white w-full px-2 m-0 flex items-center">
+                <img src='/assets/logos/diagonal.svg' alt="Booking" class="h-6">
+              </div>
+            </button>
+          </div>
+          <div class="flex">
+            <div class="text-white px-5">
+              <p>"MSPA Membuatku merasakan keajaiban nyata melalui sentuhan spa dan massage yang penuh perhatian."</p>
+              <p class="text-right">- Miss Anita</p>
+            </div>
+            <div>
+              <img src='/assets/massage.jpg' alt="masssage" class="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="gallery" class="w-full lg:px-48 md:px-12 px-4 items-center flex items-stretch overflow-hidden">
+        <div class="grid grid-cols-2 gap-0 md:grid-cols-6 lg:grid-cols-6">
+          <img src="/assets/gallery/1.jpg" alt="Image 1" class="w-full h-full object-cover object-center hover:scale-125 transition-all duration-300">
+          <img src="/assets/gallery/2.jpg" alt="Image 2" class="w-full h-full object-cover object-center hover:scale-125 transition-all duration-300">
+          <img src="/assets/gallery/3.jpg" alt="Image 3" class="w-full h-full object-cover object-center hover:scale-125 transition-all duration-300">
+          <img src="/assets/gallery/4.jpg" alt="Image 4" class="w-full h-full object-cover object-center hover:scale-125 transition-all duration-300">
+          <img src="/assets/gallery/5.jpg" alt="Image 5" class="w-full h-full object-cover object-center hover:scale-125 transition-all duration-300">
+          <img src="/assets/gallery/6.jpg" alt="Image 6" class="w-full h-full object-cover object-center hover:scale-125 transition-all duration-300">
+        </div>
+      </section>
+      
+      <section id="about" class="w-full lg:px-48 md:px-12 px-4 overflow-hidden pt-10">
+        
+        <div class="text-spurple">
+          <h2 class="text-2xl font-gloock text-center">Tentang Klinik MSPA</h2>
+          <p>Selamat datang di MSPA, destinasi utama untuk pengalaman spa dan pijat yang memanjakan. Kami adalah merek yang berdedikasi untuk memberikan keindahan dan kelembutan kepada setiap tamu yang menginjakkan kaki di tempat kami.</p>
+          <p>Di MSPA, kami mengutamakan kualitas dan kepuasan pelanggan. Dengan tim terapis yang berpengalaman dan terlatih secara profesional, kami menjamin bahwa setiap sesi spa dan pijat Anda akan menjadi pengalaman yang tak terlupakan. Kami menggabungkan teknik kuno yang teruji dengan sentuhan inovatif kami untuk menciptakan perpaduan yang sempurna antara relaksasi dan penyembuhan.</p>
+          <p>Kami memahami bahwa setiap individu memiliki kebutuhan yang unik. Oleh karena itu, kami memberikan perhatian khusus pada preferensi dan keinginan Anda. Tim terapis kami akan mendengarkan dengan seksama untuk memastikan bahwa setiap perawatan yang kami berikan sesuai dengan harapan Anda.</p>
+          <p>Selain itu, kami menggunakan produk-produk berkualitas tinggi yang dirancang khusus untuk memanjakan dan merawat kulit Anda. Dengan bahan-bahan alami dan ramah lingkungan, kami berkomitmen untuk memberikan perawatan yang tidak hanya membuat Anda merasa segar dan berenergi, tetapi juga menjaga keindahan alami kulit Anda.</p>
+          <p>Di MSPA, kami menciptakan suasana yang menenangkan dan terasa seperti pelukan hangat. Dengan desain interior yang elegan dan nuansa yang menenangkan, kami mengundang Anda untuk melepaskan diri dari kehidupan sehari-hari dan memasuki dunia yang penuh ketenangan.</p>
+          <p>Jangan ragu untuk mengunjungi kami dan merasakan sendiri sentuhan magis kami di MSPA. Siapkan diri Anda untuk pengalaman spa dan pijat yang akan membuat Anda merasa segar, terhidrasi, dan terhubung dengan diri Anda yang paling dalam. Selamat datang di dunia MSPA, tempat di mana kecantikan dan ketenangan menjadi satu.</p>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <section id="footer" class="bg-spurple py-6 w-full lg:px-48 md:px-12 px-4 items-center flex flex-col overflow-hidden">
+        <div class="mb-4">
+          <img src='/assets/logos/logo-putih.png' alt="Logo" class="h-12" />
+        </div>
+        <div class="flex mb-8">
+          <a href="#">
+            <img src='/assets/logos/Facebook.svg' alt="Facebook logo" class="mx-4" />
+          </a>
+          <a href="#">
+            <img src='/assets/logos/Youtube.svg' alt="Youtube logo" class="mx-4" />
+          </a>
+          <a href="#">
+            <img src='/assets/logos/Instagram.svg' alt="Instagram logo" class="mx-4" />
+          </a>
+          <a href="#">
+            <img src='/assets/logos/Twitter.svg' alt="Twitter logo" class="mx-4" />
+          </a>
+        </div>
+        <div class="text-white font-montserrat text-sm">
+          © 2023 MSPA. All rights reserved
+        </div>
+      </section>
+    </main>
+
+  </body>
+</html>
